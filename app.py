@@ -20,7 +20,7 @@ from plotly.subplots import make_subplots
 st.set_page_config(page_title="Equity Research Assistant", page_icon="📈", layout="wide")
 
 MAX_REPORTS_PER_SESSION = 5
-DEFAULT_MODEL = "openai/gpt-oss-120b"  # Groq retired llama-3.3-70b-versatile on 16 Aug 2026
+DEFAULT_MODEL = "openai/gpt-oss-120b"
 
 UP, DOWN, LINE, ACCENT, MUTED = "#2E7D5B", "#B23A48", "#1E4D8C", "#C08A2B", "#8A94A6"
 
