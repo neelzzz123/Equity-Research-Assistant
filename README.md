@@ -15,12 +15,12 @@ Works for US and Indian tickers (use `.NS` / `.BO`, e.g. `RELIANCE.NS`).
 
 ```bash
 pip install -r requirements.txt
-cp .streamlit/secrets.toml.example .streamlit/secrets.toml   # then paste your Groq key in it
+mkdir .streamlit
+echo 'GROQ_API_KEY = "your-groq-key"' > .streamlit/secrets.toml
 streamlit run app.py
 ```
 
-Get a free Groq key at console.groq.com. The key lives only in `secrets.toml` (git-ignored) or in the hosting platform's secrets settings, never in the code.
-
+You'll need your own free Groq key from console.groq.com. Keep it in `.streamlit/secrets.toml` and never commit that file.
 ## Files
 
 - `app.py`: the Streamlit app
